@@ -14,4 +14,6 @@ Esercizio/ (cartella)
 
 Struttura la pagina come visto a lezione. 
 Inserisci un title, un h1 e un paragrafo. 
-Il contenuto è a tua discrezione
+Il contenuto è a tua discrezione.
+
+Al termine dell'esercizio fare lo zip della cartella e caricare su classroom
