@@ -18,15 +18,55 @@ POSITION può avere 5 valori diversi
 
 
 main{
-    max-width: 1000px;
+    max-width: 500px;
     margin: 0 auto;
     /* metto un poò di padding per dare spazio ai box */
     padding-top: 100px;
     /* Questo mi serve per far vedere il comportamten di sticky e fixed */
-    min-height: 200vh;
+    min-height: 500vh;
 }
 
 .background{
     height: 80px;
     background-color: #d1d1d1;
+}
+
+.box{
+    padding: 0.5rem;
+    background-color: aquamarine;
+    border: 1px dashed #313131;
+}
+
+.relative{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.fixed{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.parent-absolute{
+    position: relative; /*il parent prende come regola il relative nel 90% dei casi*/
+    height: 500px;
+    padding: 0.5rem 1rem;
+    margin: 3rem;
+    background-color: #d1d1d1;
+}
+
+.absolute{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.sticky{
+    position: sticky;
+    top: 80px;
+    z-index: -2;
 }
