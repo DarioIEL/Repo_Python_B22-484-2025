@@ -1,0 +1,66 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #171c2a;
+    letter-spacing: .29rem;
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+h1{
+    color: #4e3969;
+    font-size: 2.88rem;
+}
+
+h2{
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: .29rem;
+    margin-bottom: 20px;
+    color: #4e3969;   
+}
+
+h2:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #4e3969;
+    margin-top: 10px;
+}
+
+
+
+img{
+    min-width: 100%;
+    height: auto;
+}
+
+.img-header{
+    display: block;
+    border-radius: .5rem;
+}
+
+.info-ricetta{
+    display: inline-block;
+    width: auto;
+    list-style: none;
+    box-shadow: 0 0.5rem 1rem rgba(141, 2, 2, 0.528);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.intro-ricetta{
+    margin: 2rem 0;
+}
+
+.box-ingredienti{
+    width: 50%;
+    height: auto;
+    float: left;
+}
