@@ -1,0 +1,37 @@
+h1{
+    /* imposta il colore del testo */
+    color: pink;
+    /* colora lo sfondo */
+    background-color: black;
+    /* grandezza del font */
+    font-size: 50px;
+    /* decorazione del testo */
+    text-decoration: underline;
+    /* famiglia font */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* allineamento testo */
+    text-align: center;
+}
+
+div{
+    width: 200px;
+    min-height: 400px;
+    border: 2px dotted red;
+    float: left;
+}
+
+p{
+    color: slategray;
+
+    /* Interlinea: spazio verticale tra una riga e l'altra */
+    line-height: 30px;
+
+    /* spazio tra una lettera e l'altra */
+    letter-spacing: 5px;
+
+    /* suddividere il testo in colonne */
+    column-count: 3;
+
+    /* spazio tra le colonne */
+    column-gap: 60px;
+}
