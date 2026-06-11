@@ -1,0 +1,38 @@
+/*---------------Regole per il mobile----------*/
+body{
+    color: white;
+    background-color: #313131;
+}
+
+main{
+    padding: 1rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+/* -----------Regole per il tablet ------------ */
+
+@media (min-width: 768px){
+    body{
+        background-color: rgba(0, 90, 15, 0.541);
+    }
+
+    main{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* -----------Regole per desktop ------------ */
+@media (min-width: 1200px){
+
+    body{
+        background-color: rgba(157, 53, 255, 0.585);
+    }
+
+    main{
+        max-width: 1140px;
+    }
+}
