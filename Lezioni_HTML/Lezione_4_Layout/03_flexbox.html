@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style_03.css">
 </head>
+
 <body>
 
     <!-- 
@@ -27,7 +29,7 @@
 
     Esempi da fare: Navbar orizzontale; Card con altezze uguali; Layout a colonne responsive
         -->
-    
+
     <header class="site-header">
         <div class="container">
             <h1>Flexbox</h1>
@@ -43,14 +45,87 @@
             <div class="container">
                 <h2>Flexbox, concetti chiave</h2>
 
-                <p>Flexbox va benissimo per: navbar, gruppi di pulsanti, card, elementi perfettamente centrati. Se ho da sviluppare un layout complesso mi serve css grid</p>
+                <p>Flexbox va benissimo per: navbar, gruppi di pulsanti, card, elementi perfettamente centrati. Se ho da
+                    sviluppare un layout complesso mi serve css grid</p>
 
                 <p>Flexbox evita di utilizzare regole un po' macchinose come float oppure inline-block</p>
             </div>
         </section>
 
-        
+        <!-- SEZIONE 2 regola flex applicata ai container -->
+        <section class="sectioin">
+            <div class="container">
+                <h2>Il container flex: display:flex e flex-direction</h2>
+
+                <p>Il primo passo è trasformare un elemento in <strong>flex container</strong> usando la regola
+                    <code>display: flex</code>. Poi scegli la direzione principale andando quindi ad impostare il main
+                    axis.
+                    <code>row</code> (default, orizzontale) oppure posso utilizzare <code>column</code> (verticale)
+                </p>
+
+                <div class="flex-demo-grid">
+
+                    <!-- esempio row -->
+                    <div class="flex-block">
+                        <h3>flex-direction: row (regola di default)</h3>
+                        <!-- Il div.flex-row-base sarà il div con la regola 
+                     display: flex
+                     flex-direction: row (asse principale)
+                      -->
+                        <div class="flex-row-base">
+                            <div class="box">A</div>
+                            <div class="box">B</div>
+                            <div class="box">C</div>
+                        </div>
+                    </div>
+
+                    <!-- esempio column -->
+                    <div class="flex-block">
+                        <h3>Flex direction: column</h3>
+
+                        <div class="flex-column-base">
+                            <div class="box">A</div>
+                            <div class="box">B</div>
+                            <div class="box">C</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEZIONE 3: justify-content + align items -->
+        <section class="section">
+            <div class="container">
+                <h2>Allineare gli elementi lungo il cross-axis oppure lungo il main-axis</h2>
+
+                <p>Entrambi i div sotto hanno come "Main Axis" l'asse orizzontale</p>
+                <div class="flex-demo-grid">
+                    <div class="flex-block">
+                        <h3>justify-content: space-between /evenly / ecc ecc</h3>
+
+                        <div class="flex-row-base justify">
+                            <div class="box">A</div>
+                            <div class="box">B</div>
+                            <div class="box">C</div>
+                        </div>
+                    </div>
+
+                    <div class="flex-block">
+                        <h3>align-items: center/ baseline /start/ ecc</h3>
+
+                        <div class="flex-row-tall align">
+                            <div class="box">A</div>
+                            <div class="box">B</div>
+                            <div class="box">C</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
-    
+
 </body>
+
 </html>
