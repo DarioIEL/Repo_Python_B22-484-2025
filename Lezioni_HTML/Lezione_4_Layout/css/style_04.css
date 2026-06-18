@@ -86,13 +86,76 @@ code{
     min-width: 45px;
 }
 
-
-.flex-es1{
-    display: flex;
-    justify-content: start;
-    align-items: start;
+.bg-All{
     background-color: #aebff6;
     padding: 0.6rem;
     border-radius: 12px;
     min-height: 120px;
+}
+
+.flex-es1{
+    display: flex;
+    /* justify-content: start; */
+    align-items: start;
+}
+
+.flex-es2{
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.flex-es3{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.flex-es9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-es10{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.flex-es11{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+.flex-es18{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tre-righe{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.row-a{
+    justify-content: end;
+}
+
+.row-b{
+    justify-content: center;
+}
+
+.row-c{
+    justify-content: start;
 }
