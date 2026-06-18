@@ -152,9 +152,47 @@
                     </div>
 
                 </div>
-                <p class="mt40">OSS: la regola justify-content agisce lungo il main axis che nel caso di flex-direction:row è quello orizzantale, mentre nel caso di flex-direct:column è l'asse verticale. Stessa cosa vale per align items</p>
+                <p class="mt40">OSS: la regola justify-content agisce lungo il main axis che nel caso di
+                    flex-direction:row è quello orizzantale, mentre nel caso di flex-direct:column è l'asse verticale.
+                    Stessa cosa vale per align items</p>
 
             </div>
+        </section>
+
+        <!-- SEZIONE 4: flex-wrap + gap -->
+        <section class="section">
+            <div class="container">
+                <h2>Come andare a capo e gestire gli spazi: flex-wrap e gap</h2>
+                <p>
+                    Di default Flexbox cerca di tenere tutti gli elemnti sulla stessa riga.
+                    Con <code>flex-wrap: wrap</code> gli items possono andare a capo.
+                    Con <code>gap</code> controllo lo spazio tra gli elementi senza usare margin.
+                    <br>
+                    OSS: è più comodo e leggibile rispetto all'utilizzo del margin sui singoli elementi
+                </p>
+
+                <div class="flex-wrap-demo">
+
+                    <!-- .flex-wrap-grid{
+                        display:flex;
+                        flex-wrap:wrap;
+                        gap: 0.9rem 
+                        } -->
+                    <div class="flex-wrap-grid">
+                        <div class="tag">HTML</div>
+                        <div class="tag">CSS</div>
+                        <div class="tag">Javascript</div>
+                        <div class="tag">Java</div>
+                        <div class="tag">SQL</div>
+                        <div class="tag">React</div>
+                        <div class="tag">Angular</div>
+                        <div class="tag">Vue</div>
+                        <div class="tag">Docker</div>
+                    </div>
+
+                </div>
+            </div>
+
         </section>
 
     </main>

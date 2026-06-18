@@ -146,3 +146,22 @@ Il container che inserisce i vari div in riga (row)*/
     /* align-items: start; */
     /* align-items: center; */
 }
+
+.flex-wrap-grid{
+    background: #dde8f7;
+    padding: 0.8rem;
+    border-radius: 12px;
+    /* Con flex-wrap: wrap -> gli elementi possono andare a capo */
+    /* Con gap: 0.9rem gestisco lo spazio tra i vari items */
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.75rem;
+}
+
+.tag{
+    background: #aebff6;
+    color: #020203;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+    border-radius: 999px;
+}
