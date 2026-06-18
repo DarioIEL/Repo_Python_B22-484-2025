@@ -53,7 +53,7 @@
         </section>
 
         <!-- SEZIONE 2 regola flex applicata ai container -->
-        <section class="sectioin">
+        <section class="section">
             <div class="container">
                 <h2>Il container flex: display:flex e flex-direction</h2>
 
@@ -98,7 +98,9 @@
             <div class="container">
                 <h2>Allineare gli elementi lungo il cross-axis oppure lungo il main-axis</h2>
 
-                <p>Entrambi i div sotto hanno come "Main Axis" l'asse orizzontale</p>
+                <p style="text-decoration: underline;">Entrambi i div sotto hanno come <strong>"Main Axis" l'asse
+                        orizzontale</strong>, dovuto al fatto che stiamo utilizzando la regola <strong>
+                        flex-direction:row</strong></p>
                 <div class="flex-demo-grid">
                     <div class="flex-block">
                         <h3>justify-content: space-between /evenly / ecc ecc</h3>
@@ -120,6 +122,37 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <div class="container mt50">
+
+                <p style="text-decoration: underline;">Entrambi i div sotto hanno come <strong>"Main Axis" l'asse
+                        verticale</strong>, dovuto al fatto che stiamo utilizzando la regola <strong>
+                        flex-direction:column</strong></p>
+                <div class="flex-demo-grid">
+                    <div class="flex-block">
+                        <h3>justify-content: space-between /evenly / ecc ecc</h3>
+
+                        <div class="flex-column-base mh240 justify">
+                            <div class="box">A</div>
+                            <div class="box">B</div>
+                            <div class="box">C</div>
+                        </div>
+                    </div>
+
+                    <div class="flex-block">
+                        <h3>align-items: center/ baseline /start/ ecc</h3>
+
+                        <div class="flex-column-tall align mh240">
+                            <div class="box">A</div>
+                            <div class="box">B</div>
+                            <div class="box">C</div>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="mt40">OSS: la regola justify-content agisce lungo il main axis che nel caso di flex-direction:row è quello orizzantale, mentre nel caso di flex-direct:column è l'asse verticale. Stessa cosa vale per align items</p>
 
             </div>
         </section>

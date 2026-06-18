@@ -86,63 +86,13 @@ code{
     min-width: 45px;
 }
 
-/* container principale che si prende la regola display: flex
-Il container che inserisce i vari div in riga (row)*/
-.flex-row-base{
+
+.flex-es1{
     display: flex;
-    /* flex-direction: row; */
-    gap: 0.8rem;
+    justify-content: start;
+    align-items: start;
     background-color: #aebff6;
     padding: 0.6rem;
     border-radius: 12px;
-
-}
-
-
-.flex-column-base{
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-    background-color: #aebff6;
-    padding: 0.6rem;
-    border-radius: 12px;
-}
-
-.mh240{
-    min-height: 240px;
-}
-
-.justify{
-    /* justify-content: space-between; */
-    justify-content: space-evenly;
-    /* justify-content: flex-end; */
-    /* justify-content: flex-start; */
-    /* justify-content: center; */
-}
-
-.flex-row-tall{
-    display: flex;
-    flex-direction: row;
-    gap:0.5rem;
-    background: #aebff6;
-    padding: 0.6rem;
-    border-radius: 12px;
-
     min-height: 120px;
-}
-
-.flex-column-tall{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    background: #aebff6;
-    padding: 0.6rem;
-    border-radius: 12px;
-}
-/* la regola align item lavora sul cross axis, quindi in questo caso in verticale */
-.align{
-    align-items: center;
-    /* align-items: end; */
-    /* align-items: start; */
-    /* align-items: center; */
 }
