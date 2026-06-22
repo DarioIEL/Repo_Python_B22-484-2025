@@ -9,7 +9,8 @@ if(etaUser <= 0 || etaUser == ""){
     demo.innerHTML = "Mi dispiace, hai inserito un'età non valida";
 }else{
     let nuovaEta = Number(etaUser) + 10;
-    demo.innerHTML = `Tra 10 anni avrai ${nuovaEta} anni`;
+    demo.innerHTML = `<h1>Tra 10 anni avrai ${nuovaEta} anni</h1>`;
+    demo.innerHTML += "Grazie per aver utilizzato il nostro calcolatore"
 }
 
 
