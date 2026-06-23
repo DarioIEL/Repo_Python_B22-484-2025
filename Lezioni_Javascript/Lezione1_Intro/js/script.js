@@ -48,6 +48,9 @@ console.log("La variabile eta è di tipo: " + typeof eta);
 let num1 = 42;
 let num2 = 6;
 
+console.log("Il risultato della somma vale: " + num1 + num2);
+
+
 let somma = num1 + num2;
 
 // let fraseRisultato = "Il risultato della somma vale: " + num1  + num2;
@@ -60,8 +63,13 @@ console.log(fraseRisultato);
 let num3 = "8";
 let num4 = "16";
 
-// let somma2 = Number(num3) + Number(num4); //Questa operazione si chiama CAST del dato: forzare una variabile ad essere di un determinato tipo
-let somma2 = parseInt(num3) + parseInt(num4);
+// let somma2 = num3 + num4; 
+let somma2 = Number(num3) + Number(num4); //Questa operazione si chiama CAST del dato: forzare una variabile ad essere di un determinato tipo
+// let somma2 = parseInt(num3) + parseInt(num4);
+
+/**
+ * Proprio perché JS è debolmente tipizzato, il codice viene interpretato  e num3 e num4 vengono trattati come numeri se messi in relazione con operazioni matematiche. Questo non vale con la somma +  
+ */ 
 let prod = num3 * num4;
 let quoz = num3 / num4;
 let sott = num3 - num4;
