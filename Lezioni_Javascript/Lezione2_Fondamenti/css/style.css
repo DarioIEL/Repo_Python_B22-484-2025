@@ -38,21 +38,32 @@ body{
 
 .row{
     width: 20%;
-    min-height: 260px;
+    /* min-height: 260px; */
     margin: 2rem;
     border-radius: 12px;
     background-color: #425abd;
     padding: 0.8rem;
     color: white;
+    flex-wrap: wrap;
 }
 
 .box1{
     width: 60%;
-    min-height: 280px;
+    /* min-height: 280px; */
     /* background-color: bisque; */
 }
 .box2{
     width: 40%;
-    min-height: 280px;
+    /* min-height: 280px; */
     /* background-color: blueviolet; */
+}
+
+.row ul{
+    list-style: none;
+    padding: 0;
+}
+
+.box3{
+    width: 100%;
+    border-top: 1px solid white;
 }
