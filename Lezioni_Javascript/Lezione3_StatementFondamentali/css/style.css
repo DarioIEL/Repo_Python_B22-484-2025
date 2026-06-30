@@ -1,3 +1,23 @@
 body{
-    background-color: rgb(220, 255, 206);
+    /* background-color: rgb(220, 255, 206); */
+}
+
+.txtArg{
+    color: aqua;
+}
+
+.txtBra{
+    color: rgb(255, 200, 0)
+}
+
+.txtFra{
+    color: blue;
+}
+
+.txtSpa{
+    color: red
+}
+
+.txtIta{
+    color: rgb(0, 98, 255)
 }

@@ -20,7 +20,7 @@ Scrivere un programma che crea una nuova stringa, a partire da una fornita, aggi
 ## Esercizio 7
 Scrivere un programma per trovare il valor più vicino a 100 tra una coppia di numeri forniti, se sono uguali ritorna un avviso
 
-## Esercizio 13
+## Esercizio 13 - classico di statement annidati
 Scrivi un programma che stampa tutti gli interi da 1 a 100. Per i multipli di 3 stampa “ZOOM”, per i multipli di 5 stampa “BOOM”. Per i multipli sia di 3 , sia di 5 stamperà “BANGARANG”
 
 ## Esercizio 14
