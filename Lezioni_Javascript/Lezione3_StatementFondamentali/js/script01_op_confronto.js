@@ -5,6 +5,8 @@ let num02 = 6;
 
 console.log(num01 > num02); // true
 console.log(num01 < num02); // false
+console.log(num01 <= num02); // true
+console.log(num01 >= num02); // false
 console.log(num01 == num02); //false
 console.log(num01 != num02); //true
 
