@@ -63,5 +63,4 @@ let demoForEach = document.getElementById("demo_for_each");
 campionati.forEach(campionato => {
     console.log(campionato);
     demoForEach.innerHTML += `<li> ${campionato} </li>`;
-    
 })
