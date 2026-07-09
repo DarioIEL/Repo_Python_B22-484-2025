@@ -17,6 +17,12 @@ saluta();
 
 
 //dichiaro una funzione con i parametri
+/**
+ * JSDoc
+ * @param {String} nomeDocente 
+ * @param {String} cognomeDocente 
+ * @param {String} materiaDocente 
+ */
 function salutaDocente(nomeDocente, cognomeDocente, materiaDocente){
     console.log(`Ciao, ${nomeDocente} ${cognomeDocente}!! Sei il docente di ${materiaDocente}`);
 }
@@ -94,6 +100,6 @@ btn.addEventListener("click", function(){
     if(num1 != "" && num2 != ""){
         demo.innerHTML = calcolaTutto(num1, num2); //qui utilizzo il return della mia funzione
     }else{
-        demo.innerHTML = "<h2> Non hai inserito correttamente i numeri"
+        demo.innerHTML = "<h2> C'è qualche campo vuoto";
     }
 })
