@@ -30,6 +30,8 @@ function salutaDocente(nomeDocente, cognomeDocente, materiaDocente){
 //Quando richiamo la funzione che ha un parametro allora devo passargli i paratri necessari, in base al numero di paramentri che ho dichiarato
 salutaDocente("Oscar", "Vecchione", "DB");
 
+
+
 //Attenzione i parametri possono essere di tutti i tipi
 function sommaNumeri(num1, num2){
     let somma = num1 + num2;
@@ -103,3 +105,36 @@ btn.addEventListener("click", function(){
         demo.innerHTML = "<h2> C'è qualche campo vuoto";
     }
 })
+
+
+function salutaPersona(nome){
+    console.log(`Ciao ${nome}`);
+}
+
+let nomi = ["Anna", "Paolo", "Luca", "Francesca", "Luisa"];
+
+/**
+ * @param {String[]} nomiDiPersone 
+ */
+function salutaTutti(nomiDiPersone){
+    // nomiDiPersone.forEach(nome => {
+    //     salutaPersona(nome);
+    // })
+
+    //i = index, is the index of the arrays
+    // for(let i = 0; i < nomiDiPersone.length; i++){
+    //     salutaPersona(nomiDiPersone[i]);
+    // }
+
+    for (const name of nomiDiPersone) {
+        if(name == "Luca"){
+            console.log(`Carissimo ${name}`);
+            
+        }
+            salutaPersona(name);
+        
+    }
+}
+
+salutaTutti(nomi);
+

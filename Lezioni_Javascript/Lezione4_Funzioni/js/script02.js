@@ -48,7 +48,8 @@ function iscriviAlCorso(){
     //OSS: a parità di nome "vince" la variabile locale su quella globale. E' un pò come se venisse sovrascritta
 }
 
-nomeStudente = "Mario Gialli";
+console.log(nomeStudente);
+
 iscriviStudente();
 iscriviAlCorso();
 
@@ -56,8 +57,8 @@ iscriviAlCorso();
 
 
 for(let i = 0; i <= 100; i++){
-    // var variabileFlag = 42; //Con il var la mia variabile diventa visibile anche all'esterno del for.
-    let variabileFlag = 42; //Con il let questa variabile è puramente locale, quindi visibile solo nel for
+    var variabileFlag = 42; //Con il var la mia variabile diventa visibile anche all'esterno del for.
+    //let variabileFlag = 42; //Con il let questa variabile è puramente locale, quindi visibile solo nel for
     if(i == variabileFlag){
         console.log("Don't Panic");
     }else{
@@ -65,8 +66,33 @@ for(let i = 0; i <= 100; i++){
     }
 }
 
+console.log(variabileFlag);
+
+
 //Questa trattazione (let & var) sopra VALE SOLO NEGLI STATEMENT (for, if, while, switch), NON VALE NELLE FUNZIONI
 
-if(variabileFlag == 42){
-    console.log(`Hai trovato il numero ${variabileFlag}`);
+// if(variabileFlag == 42){
+//     console.log(`Hai trovato il numero ${variabileFlag}`);
+// }
+
+
+//CLOSURE
+function firstFunction(){
+    let number = 0;
+
+    function secondFunction(){
+        number++;
+        return number;
+    }
+    
+   return secondFunction;
 }
+
+
+let contatore = firstFunction();
+
+console.log(contatore());
+console.log(contatore());
+console.log(contatore());
+
+
